@@ -9,7 +9,8 @@ import (
 func main(){
 	tools.InitRedis()
 	r:= gin.Default()
-	r.Static("/", "./public")
+
+	r.Static("/form", "./public")
 
 	router.Router(r)
 
